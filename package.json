@@ -1,0 +1,43 @@
+{
+    "name": "langchain-cost-tracker",
+    "version": "0.1.0",
+    "description": "LangChain.js LLM cost tracking with provider-reported usage, scheduled pricing refresh, local memory or Redis storage.",
+    "type": "module",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "typecheck": "tsc -p tsconfig.json --noEmit",
+        "test": "npm run build && node --test"
+    },
+    "engines": {
+        "node": ">=20"
+    },
+    "peerDependencies": {
+        "@langchain/core": ">=0.3"
+    },
+    "peerDependenciesMeta": {
+        "@langchain/core": {
+            "optional": true
+        }
+    },
+    "optionalDependencies": {
+        "ioredis": "^5.4.1"
+    },
+    "devDependencies": {
+        "@types/node": "^24.0.0",
+        "typescript": "^5.9.0"
+    },
+    "license": "MIT"
+}
