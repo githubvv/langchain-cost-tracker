@@ -1,6 +1,6 @@
 {
-    "name": "langchain-cost-tracker",
-    "version": "1.0.1",
+    "name": "@githubvv/langchain-cost-tracker",
+    "version": "1.0.2",
     "description": "LangChain.js LLM cost tracking with provider-reported usage, scheduled pricing refresh, local memory or Redis storage.",
     "repository": {
         "type": "git",
@@ -9,6 +9,9 @@
     "homepage": "https://github.com/githubvv/langchain-cost-tracker#readme",
     "bugs": {
         "url": "https://github.com/githubvv/langchain-cost-tracker/issues"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
     },
     "type": "module",
     "main": "./dist/index.js",
